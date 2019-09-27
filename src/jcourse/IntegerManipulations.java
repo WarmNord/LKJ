@@ -11,6 +11,9 @@ public class IntegerManipulations {
         b = 3;
         c = a % b;
         c += 5;
-        System.out.println("c = " + c);
+
+        int z = 65421;
+
+        System.out.println(z % 1000 / 100);
     }
 }
