@@ -1,3 +1,5 @@
+package jcourse;
+
 public class Days {
     public static void main(String[] args) {
         int days = 365;
