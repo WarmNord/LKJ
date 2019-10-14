@@ -7,7 +7,7 @@ public class Temp {
             System.out.println("Кондиционер включен");
         }
         else if (temp < 22) {
-            System.out.println("Condicioner is off");
+            System.out.println("Conditioner is off");
 
         } else {
             System.out.println("Conditioner relax");

@@ -1,4 +1,4 @@
-package jcourse;
+package jcourse.hw;
 
 /**
  * >500 - pizza

@@ -1,4 +1,4 @@
-package jcourse;
+package jcourse.hw;
 
 public class HW01 {
 

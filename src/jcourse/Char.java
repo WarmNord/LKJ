@@ -2,7 +2,7 @@ package jcourse;
 
 public class Char {
     public static void main(String[] args) {
-        char a = 89;
+        char a = 87;
         a += 1;
         char b = 'Y';
 
