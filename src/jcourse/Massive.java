@@ -33,6 +33,14 @@ public class Massive {
 
        for (int i : nums) {
 
+           System.out.println(i);
+
+       }
+       char[] chars = new char[10];
+
+       for (char ch : chars){
+
+           System.out.println(ch);
        }
 
 
