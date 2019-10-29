@@ -4,25 +4,23 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Box box1 = new Box();
-        box1.height = 5;
-        box1.length = 5;
-        box1.width = 5;
+        Box box = new Box(10);
+        Box box2 = new Box(15, 20, 25);
+        Box box3 = new Box();
 
-        Box box2 = new Box();
-        box2.width = 10;
-        box2.height = 10;
-        box2.length = 10;
+        int result = box.compare(box2);
 
-        double volume1 = box1.volume();
-        double volume2 = box2.volume();
+        switch (result) {
 
-        System.out.println(volume1);
-        System.out.println(volume2);
+            case -1:
+                System.out.println("Our box is smaller");
+                break;
+            case 0:
+                System.out.println("Boxex are equal");
 
+            case 1:
+                System.out.println("Our box is more");
 
-
-
-
+        }
     }
 }
