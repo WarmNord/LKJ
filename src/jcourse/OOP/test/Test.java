@@ -1,4 +1,4 @@
-package jcourse.OOP;
+package jcourse.OOP.test;
 
 public class Test {
 

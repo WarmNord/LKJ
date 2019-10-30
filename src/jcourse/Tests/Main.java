@@ -1,6 +1,6 @@
 package jcourse.Tests;
 
-import jcourse.OOP.Box;
+import jcourse.OOP.box.Box;
 
 public class Main {
     public static void main(String[] args) {
