@@ -21,6 +21,10 @@ public class Box {
 
     }
 
+    public void showInfo() {
+        System.out.println(width + " " + height + " " + length);;
+    }
+
     public Box(double size) {
 
         width = size;
@@ -69,6 +73,15 @@ public class Box {
     void showVolume() {
 
         System.out.println(volume());
+    }
+
+    @Override
+    public String toString() {
+
+        String result = String.format("W %s\nL %s\nh %s",width,length,height);
+        return  result;
+
+
     }
 }
 
