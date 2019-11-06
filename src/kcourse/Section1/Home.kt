@@ -1,13 +1,13 @@
 package kcourse.Section1
 
-import com.sun.org.apache.bcel.internal.generic.CHECKCAST
-import java.util.*
+val scan = java.util.Scanner(System.`in`)
 
-val sc = Scanner(System.`in`)
 fun main() {
+    val a = scan.nextLine()
 
-    var a = sc.nextInt()
 
-    println("You are input $a")
-CHECKCAST
+
+
+    println("Q" + a.substring(1..a.length - 1))
+
 }
