@@ -6,7 +6,7 @@ fun main() {
         12, 32 -> {
             "Winter"
         }
-        4, 3 -> {
+        in 3..5 -> {
             "Spring"
         }
         else -> {
@@ -14,5 +14,29 @@ fun main() {
         }
 
     }
-    println(season)
+
+
+
+
+    fun wt(tpr:Int) {
+
+       val state:String = if (tpr < 0 ) {
+            "Ice"
+        } else if (tpr > 0 && tpr < 100 ) {
+            "Liquid water"
+        } else {
+            "Vapor"
+        }
+
+        println(state)
+
+    }
+
+    wt(101)
+
+
+
 }
+
+
+
