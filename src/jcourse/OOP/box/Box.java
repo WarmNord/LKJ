@@ -2,9 +2,9 @@ package jcourse.OOP.box;
 
 public class Box {
 
-    private double width;
-    private double height;
-    private double length;
+    public double width;
+    public double height;
+    public double length;
 
 
     public Box(double width, double height, double length) {
@@ -22,7 +22,8 @@ public class Box {
     }
 
     public void showInfo() {
-        System.out.println(width + " " + height + " " + length);;
+        System.out.println(width + " " + height + " " + length);
+        ;
     }
 
     public Box(double size) {
@@ -70,16 +71,16 @@ public class Box {
 
     }
 
-    void showVolume() {
+    double Volume() {
+        return width * length * height;
 
-        System.out.println(volume());
     }
 
     @Override
     public String toString() {
 
-        String result = String.format("W %s\nL %s\nh %s",width,length,height);
-        return  result;
+        String result = String.format("W %s\nL %s\nh %s", width, length, height);
+        return result;
 
 
     }

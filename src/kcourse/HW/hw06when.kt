@@ -1,7 +1,38 @@
 package kcourse.HW
 
-fun main() {
-    val t:Int = 15
+import kotlin.math.max
+import kotlin.math.min
+import kotlin.math.sqrt
 
-    val state:String
+fun main() {
+    val a = scan.nextInt()
+    val b = scan.nextInt()
+    val c = scan.nextInt()
+    val d = scan.nextInt()
+    val e = scan.nextBoolean()
+
+
+    val z = max(a,b)
+    val x = max(c,d)
+    val ma = max(z,x)
+
+
+    val f = min(a,b)
+    val g = min(c,d)
+    val mi = min(f,g)
+
+  /*  if (e == true) {
+        println(mi)
+    }
+    else {
+        println(ma)
+    }
+*/
+    when (e){
+        true -> { println(mi)}
+        else -> {println(ma)}
+
+    }
+
+
 }

@@ -10,9 +10,24 @@ public class Main {
     public static void main(String[] args) {
 
 
+        Box box2 = new Box();
+        box2.height = 5;
+        box2.length = 5;
+        box2.width = 5;
 
-        int r = (int) (Math.random() * 10000 + 1);
+        Box box3 = new Box();
+        box3.height = 8;
+        box3.length = 8;
+        box3.width = 8;
 
-        System.out.println(r);
+
+
+        double vol2 = box2.length * box2.height * box2.width;
+
+        double vol3 = box3.length * box3.height * box3.width;
+
+        box2.volume();
+
+        box3.volume();
     }
 }
