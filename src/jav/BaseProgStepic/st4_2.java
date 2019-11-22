@@ -1,4 +1,4 @@
-package jav;
+package jav.BaseProgStepic;
 
 import java.util.Scanner;
 
