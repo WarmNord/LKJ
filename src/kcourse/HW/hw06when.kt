@@ -1,8 +1,8 @@
 package kcourse.HW
 
+import kcourse.HW.stepic.scan
 import kotlin.math.max
 import kotlin.math.min
-import kotlin.math.sqrt
 
 fun main() {
     val a = scan.nextInt()

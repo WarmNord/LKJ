@@ -1,4 +1,4 @@
-package kcourse.HW
+package kcourse.HW.stepic
 
 val scan = java.util.Scanner(System.`in`)
 

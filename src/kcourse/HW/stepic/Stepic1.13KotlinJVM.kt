@@ -1,4 +1,4 @@
-package kcourse.HW
+package kcourse.HW.stepic
 
 fun main() {
     val a = scan.nextInt()

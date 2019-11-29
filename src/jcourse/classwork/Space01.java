@@ -1,4 +1,4 @@
-package jcourse;
+package jcourse.classwork;
 import java.util.Scanner;
 
 public class Space01 {

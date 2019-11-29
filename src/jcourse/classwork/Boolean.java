@@ -1,4 +1,4 @@
-package jcourse;
+package jcourse.classwork;
 
 public class Boolean {
     public static void main(String[] args) {
