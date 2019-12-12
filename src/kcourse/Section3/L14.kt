@@ -11,11 +11,16 @@ fun main() {
     }
      */
 
-    val array = generateSequence(0) {it + 2}
-    val evenList = array.take(100)
-    for (i in evenList){
+    val array = generateSequence('A') {
+        println("Generated: ${it + 1}")
+        it + 1
+    }
+    val evenList = array.take(10)
+   for (i in evenList){
         println(i)
     }
+
+
 
 
 
