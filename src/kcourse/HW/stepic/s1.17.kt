@@ -2,26 +2,14 @@ package kcourse.HW.stepic
 
 import java.util.*
 
+
 val scanner = Scanner(System.`in`)
 
 fun main() {
-    val a = scanner.nextLine()
-
-    val k = a.split(" ")
-
-    val n = Array<Int>(10,{0})
-
-    for (k in k){
-        n[k] = scanner.nextInt()
-    }
 
 
+    val str = scanner.nextLine()
+    val numArr = Arrays.stream(str.split(" ".toRegex()).toTypedArray()).mapToInt { s: String -> s.toInt() }.toArray()
 
-
-
-    println(n.sortedArrayDescending())
-
-
-
-
+    println(numArr.sortedArrayDescending())
 }
