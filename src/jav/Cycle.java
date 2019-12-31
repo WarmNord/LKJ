@@ -1,18 +1,21 @@
 package jav;
 
+import java.util.Scanner;
+
 public class Cycle {
     public static void main(String[] args) {
-     /*   for (int i = 0; i <= 100; i++ ) {
-            System.out.println(i);
-        }*/
 
-        int[] array = new int[101];
-        for (int i = 0; i < array.length; i++ ) {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
 
-            array[i] = i;
+      for (int i = 1; i <= a; i++ ) {
+
+          if (a % i == 0){
+              System.out.println(i);
+          }
+
         }
-        for (int i : array){
-            System.out.println(i);
-        }
+
+
     }
 }
