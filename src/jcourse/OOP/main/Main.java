@@ -1,6 +1,5 @@
 package jcourse.OOP.main;
 
-
 import jcourse.OOP.box.Box;
 import jcourse.OOP.box.Man;
 import jcourse.OOP.test.Empty;

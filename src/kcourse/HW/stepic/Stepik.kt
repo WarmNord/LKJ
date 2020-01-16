@@ -1,16 +1,11 @@
 package kcourse.HW.stepic
 
-val scan = java.util.Scanner(System.`in`)
 
+val scan = java.util.Scanner(System.`in`)
 fun main() {
 
-    val a = scan.nextLine()
+    val a = scan.nextInt()
+    val b = scan.nextLine()
 
-    val m = "$a".split(" ")
-
-
-    println(m)
-
-
-
+   print(b.reversed())
 }
