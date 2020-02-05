@@ -1,5 +1,7 @@
 package kcourse.OOPEquals;
 
+import java.util.Objects;
+
 public class Adress {
 
     private String city;
@@ -37,13 +39,42 @@ public class Adress {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Adress adress = (Adress) o;
+        return numberOfHouse == adress.numberOfHouse &&
+                Objects.equals(city, adress.city) &&
+                Objects.equals(street, adress.street);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(city, street, numberOfHouse);
+    }
+
+    /*@Override
     public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (hashCode() != obj.hashCode()) {
+            return false;
+        }
         if (obj instanceof Adress) {
             Adress adress = (Adress) obj;
-            return this.city.equals(adress.city) && this.street.equals(adress.street) && this.numberOfHouse == adress.numberOfHouse;
+            return
+            this.city.equals(adress.city) && this.street.equals(adress.street) && this.numberOfHouse == adress.numberOfHouse;
 
         } else {
             return false;
         }
     }
+
+    @Override
+    public int hashCode() {
+        return city.hashCode() + street.hashCode() + numberOfHouse;
+    }*/
+
+
 }
