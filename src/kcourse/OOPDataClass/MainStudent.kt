@@ -1,14 +1,14 @@
 package kcourse.OOPDataClass
 
+import kcourse.Section3.name
+
+
 fun main() {
     val student1 = Student("Ivan", "Ivanov", "412344")
-    val student2 = student1.copy(id = "234")
+    val student2 = student1.copy()
 
-    val (name, lastName, id) = student1 // деструктор или дестурктивный опратор,
+   // val (name, lastName, id) = student1 // деструктор или дестурктивный опратор,
 
-    println(name)
-    println(lastName)
-    println(id)
 
    /* println(student1)
     println(student2)

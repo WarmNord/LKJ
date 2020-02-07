@@ -7,19 +7,26 @@ val scan = Scanner(System.`in`)
 fun main() {
     var a = 1
     var n = scan.nextInt()
-    var cnt = 0
+    var sumnumb = 0
+    var max = 0
+    var maxnumb = 0
     for (i in a..n){
 
         var l = i
+        var sumnumb = 0
         while (l != 0) {
             var s = l % 10
-            if (s == 7) cnt += 1
+            sumnumb += s
             l /= 10
 
+            if (max < sumnumb) {
+                max = sumnumb
+                maxnumb = i
+            }
         }
 
     }
-    println(cnt)
+    println("$maxnumb $max ")
 
 }
 

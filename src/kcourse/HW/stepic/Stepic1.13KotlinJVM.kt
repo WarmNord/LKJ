@@ -1,13 +1,7 @@
 package kcourse.HW.stepic
 
 fun main() {
-    val a = scan.nextInt()
-    val b = scan.nextInt()
-    val c = scan.nextInt()
-    val d = scan.nextInt()
-    val e = scan.nextInt()
-    val f = scan.nextInt()
+    val month = "(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)"
 
-    var count = 2 * d + e * (a * b + c) - f
-    println(count)
+    println("13 $month 1992")
 }
