@@ -1,32 +1,22 @@
 package kcourse.Section3
 
 fun main() {
-    val sum: (Int, Int) -> Int = { a: Int, b: Int -> a + b }
-    val square: (Int) -> Int = { it * it }
+    //нигде не дали имя, поэтому функция анонимная - лямбда выражение
+    //функция в фигурных скобках
+    //Если функция ничего не возвращает, то после  val sum:(Int, Int) -> пишется Unit(аналог void in Java)
+  val sum:(Int, Int) -> Int = { a, b -> a + b}
 
-    val s: (Int, Int) -> Int = { a: Int, b: Int -> 2 * (a + b) }
+    // it - переменная, созданная компилятором, возможно, если только 1 параметр используется
+    val square:(Int) ->  Int = { it * it}
 
-    val hello: (String) -> String = { a: String -> "Hi, $a!" }
+    val p: (Int,Int) -> Int = {a,b -> 2 * (a + b)}
 
-    val sort: (Array<Int>) -> Array<Int> = {
+    val n:(String) -> Unit = { println("Hi, $it!")}
 
-    for (i in it.size - 2 downTo 0) {
-        for (j in 0..i) {
-            if (it[j] < it[j + 1]) {
-                val temp = it[j]
-                it[j] = it[j + 1]
-                it[j +1] = temp
-            }
-        }
-    }
-        it
-
-    }
+    val ar:(Array<Int>) -> Array<Int> = {it -> it.sortedArrayDescending()}
 
 
-    val sArr = sort(arrayOf(0,1,59,765,56,48,85,254,4,6))
-    for (i in sArr) {
-        println(i)
-    }
+    val a =sum(2,10)
+
     
 }

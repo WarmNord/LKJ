@@ -1,6 +1,6 @@
 package kcourse.OOPSingleTon
 
-class DataBase private constructor(){
+class DataBase(){
 
     val name = "main.db"
     val version = 1
