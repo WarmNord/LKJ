@@ -9,5 +9,5 @@ fun main() {
 
     val a = initArray.filter { it % 5 == 0 || it % 3 == 0 }.map { it * it }.sortedDescending().map { "Wow $it" }
 
-}}
+}
 
