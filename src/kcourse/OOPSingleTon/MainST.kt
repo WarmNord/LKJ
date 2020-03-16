@@ -1,7 +1,7 @@
 package kcourse.OOPSingleTon
 
 fun main() {
-    val db = DataBase
+  /*  val db = DataBase
     db.inserData("1")
     db.inserData("2")
 
@@ -11,5 +11,5 @@ fun main() {
 
     for (str:String in db.data) {
         println(str)
-    }
+    }*/
 }
