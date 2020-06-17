@@ -14,8 +14,6 @@ fun main() {
     val n:(String) -> Unit = { println("Hi, $it!")}
 
     val ar:(Array<Int>) -> Array<Int> = {it -> it.sortedArrayDescending()}
-
-
     val a =sum(2,10)
 
     

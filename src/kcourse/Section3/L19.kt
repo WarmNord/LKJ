@@ -2,13 +2,14 @@ package kcourse.Section3
 
 fun main() {
 
-     val result = modifyString("Hello world") {it.toUpperCase()}
-
-    println(result)
-
-
+    val obj = mutableMapOf<String, String>()
+    with(obj){
+        keys
+        values
+    }
 }
 
-fun modifyString(string: String, modify: (String) -> String ) : String {
-    return modify(string)
-}
+  inline  fun<T, R> myWith(obj: T, operation: T.() -> R): R {
+    return obj.operation()
+    }
+

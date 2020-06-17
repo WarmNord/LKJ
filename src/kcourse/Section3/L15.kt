@@ -3,6 +3,8 @@ package kcourse.Section3
 import kcourse.HW.stepic.isCapitalized
 import org.omg.PortableInterceptor.INACTIVE
 
+
+
 fun main() {
 
     val names = mutableListOf<String>()

@@ -23,15 +23,12 @@ public class Box {
 
     public void showInfo() {
         System.out.println(width + " " + height + " " + length);
-        ;
     }
 
     public Box(double size) {
-
         width = size;
         height = size;
         length = size;
-
     }
 
     public Box() {
@@ -41,20 +38,15 @@ public class Box {
     }
 
     public Box(Box box) {
-
         this.width = box.width;
         this.length = box.length;
         this.height = box.height;
-
     }
 
     Box(Box box1, Box box2) {
-
         this.width = box1.width + box2.width;
         this.length = box1.length + box2.length;
         this.height = box1.height + box2.height;
-
-
     }
 
     Box sumBox(Box box) {
@@ -68,7 +60,6 @@ public class Box {
 
     public double volume() {
         return width * height * length;
-
     }
 
     double Volume() {
@@ -78,11 +69,8 @@ public class Box {
 
     @Override
     public String toString() {
-
         String result = String.format("W %s\nL %s\nh %s", width, length, height);
         return result;
-
-
     }
 }
 
