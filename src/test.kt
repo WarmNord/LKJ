@@ -1,6 +1,20 @@
+fun fizzbuzz(from: Int, to: Int, transformation: (Int) -> String) {
+    for (number in from..to) {
+        println(transformation(number))
+    }
+}
 
-fun sum(a: Int, b: Int) = a + b
 fun main() {
-    val s1: (Int, Int) -> Int = ::sum
-    print(s1(2, 4))
+    fizzbuzz(1, 100) { number ->
+        if (number % 15 == 0) {
+             return@fizzbuzz "fizzbuzz"
+        }
+        if (number % 3 == 0) {
+             "fizz"
+        }
+        if (number % 5 == 0) {
+             "buzz"
+        }
+         number.toString()
+    }
 }
