@@ -8,7 +8,11 @@ public class stfin {
     }
 
     static void show(double a, double b) {
+        sqr();
         System.out.println(a / b);
+    }
+
+    private static void sqr() {
     }
 
     void sqr(int r1) {
