@@ -1,6 +1,6 @@
 package judm.L08;
 
-import jcourse.OOP.test.Test;
+//import jcourse.OOP.test.Test;
 
 public class Test1 {
      public final int a;

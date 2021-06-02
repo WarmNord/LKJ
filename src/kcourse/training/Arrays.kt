@@ -20,7 +20,7 @@ fun main(args: Array<String>) {
     items_list.addAll(4, dogs )
 
     var user = mutableMapOf( "name" to "Bob", "age" to 1, "isHasCar" to true)
-    user.put("city", "NY")
+   // user.put("city", "NY")
 
     printArray(user)
     //user.
